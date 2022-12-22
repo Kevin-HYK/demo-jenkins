@@ -1,7 +1,6 @@
 package demo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -9,7 +8,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import demoJavaAvecGit.FactorielException;
 import demoJavaAvecGit.FonctionMathematique;
 
 class MaClasseDeTest {
@@ -41,15 +39,15 @@ class MaClasseDeTest {
 		assertEquals(10, fct.addition(2, 8));
 	}
 
-	@Test
-	void factorielTest() {
-		assertEquals(6, fct.factoriel(3));
-	}
+//	@Test
+//	void factorielTest() {
+//		assertEquals(6, fct.factoriel(8));
+//	}
 
-	@Test
-	void factorielExceptionTest() {
-		assertThrows(FactorielException.class, () -> {
-			fct.factoriel(-1);
-		});
-	}
+//	@Test
+//	void factorielExceptionTest() {
+//		assertThrows(FactorielException.class, () -> {
+//			fct.factoriel(-1);
+//		});
+//	}
 }
